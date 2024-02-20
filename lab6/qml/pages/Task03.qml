@@ -5,7 +5,7 @@ Page {
     property var jsArrMdl: [
         { txt: "Белый", bgClr: "#ffffff", txtClr: "#000000" },
         { txt: "Чёрный", bgClr: "#000000", txtClr: "#ffffff" },
-        { txt: "Синий", bgClr: "#0000ff", txtClr: "#ff0000" },
+        { txt: "Синий", bgClr: "#0000ff", txtClr: "#ff0000" }
     ]
 
     SilicaListView {
