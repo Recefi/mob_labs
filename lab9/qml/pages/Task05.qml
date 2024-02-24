@@ -5,7 +5,7 @@ import QtMultimedia 5.6
 Page {
     Audio {
         id: audio
-        source: "Ave Maria - Schubert, Quintessential Strings [16BC9Pr99bs].m4a"
+        source: "https://samplelib.com/lib/preview/mp3/sample-9s.mp3"
     }
     IconButton {
         anchors.centerIn: parent
