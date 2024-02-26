@@ -1,0 +1,7 @@
+http://web.archive.org/web/20210612165503/https://www.omp.ru/sdk
+
+http://web.archive.org/web/20210616232609/https://community.omprussia.ru/documentation/software_development/sdk/downloads.html
+
+https://sdk-repo.omprussia.ru/sdk/installers/3.2.2/AuroraSDK-3.2.2.21-base-linux-64-offline-ea.run
+
+https://sdk-repo.omprussia.ru/sdk/installers/
