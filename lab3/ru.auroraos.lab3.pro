@@ -48,9 +48,6 @@ SOURCES += \
 HEADERS += \
 
 DISTFILES += \
-    qml/pages/Task6.qml \
-    qml/pages/Task7.qml \
-    qml/pages/Task8.qml \
     rpm/ru.auroraos.lab3.spec \
     AUTHORS.md \
     CODE_OF_CONDUCT.md \

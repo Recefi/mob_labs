@@ -37,6 +37,7 @@
 
 #include <auroraapp.h>
 #include <QtQuick>
+#include <QtMultimedia>
 
 int main(int argc, char *argv[])
 {

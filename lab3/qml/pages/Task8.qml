@@ -30,11 +30,13 @@ Page {
                     id: fld1
                     width: 0.4 * page.width
                     placeholderText: "1"
+                    inputMethodHints: Qt.ImhDigitsOnly
                 }
                 TextField {
                     id: fld2
                     width: 0.4 * page.width
                     placeholderText: "2"
+                    inputMethodHints: Qt.ImhDigitsOnly
                 }
             }
             Label {

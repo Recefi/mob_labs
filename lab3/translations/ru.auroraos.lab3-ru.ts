@@ -5,8 +5,8 @@
     <name>DefaultCoverPage</name>
     <message>
         <location filename="../qml/cover/DefaultCoverPage.qml" line="46"/>
-        <source>Template</source>
-        <translation>Шаблон</translation>
+        <source>lab3</source>
+        <translation>лаба3</translation>
     </message>
 </context>
 </TS>

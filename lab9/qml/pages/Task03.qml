@@ -28,7 +28,7 @@ Page {
                     width: 10
                     height: width
                     radius: width / 2
-                    color: "red"
+                    color: "yellow"
                 }
             }
             Timer {

@@ -3,10 +3,12 @@ import Sailfish.Silica 1.0
 
 Page {
     Column {
-        anchors.centerIn: parent
+        anchors.verticalCenter: parent.verticalCenter
+        width: parent.width
         spacing: Theme.paddingMedium
 
         Button {
+            anchors.horizontalCenter: parent.horizontalCenter
             text: "Диалог"
             onClicked: {
                 dialog.open()
@@ -23,14 +25,11 @@ Page {
         id: dialog
         property alias txtFldVal: txtFld.text
 
-        Column {
-            anchors.fill: parent
-            DialogHeader {}
-            TextField {
-                id: txtFld
-                anchors.centerIn: parent
-                width: parent.width / 2
-            }
+        DialogHeader {}
+        TextField {
+            id: txtFld
+            anchors.centerIn: parent
+            width: parent.width / 2
         }
     }
 }

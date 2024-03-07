@@ -34,8 +34,9 @@
 ## EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ##
 ################################################################################
-
 TARGET = ru.auroraos.lab9
+
+QT += multimedia
 
 CONFIG += \
     auroraapp

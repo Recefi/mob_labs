@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.auroraos.ColorLines
+Exec=/usr/bin/ru.auroraos.ColorLines
+Name=Color Lines
+Name[ru]=Цветные Линии
+
+[X-Application]
+Permissions=AccessSecurityLog;LogSecurityEvents;Sensors;SecureStorage;PushNotifications;DeviceInfo;Audio;Bluetooth;Camera;Internet;Location;MediaIndexing;Microphone;NFC;RemovableMedia;UserDirs;WebView
+OrganizationName=ru.auroraos
+ApplicationName=ColorLines
+ExecDBus=/usr/bin/ru.auroraos.ColorLines

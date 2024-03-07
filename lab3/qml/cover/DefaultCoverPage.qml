@@ -43,7 +43,7 @@ CoverBackground {
 
     CoverPlaceholder {
         objectName: "placeholder"
-        text: qsTr("Template")
+        text: qsTr("lab3")
         icon {
             source: Qt.resolvedUrl("../icons/lab3.svg")
             sourceSize { width: icon.width; height: icon.height }
