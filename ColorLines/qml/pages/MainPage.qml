@@ -1,4 +1,3 @@
-
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
@@ -47,75 +46,73 @@ Page {
         for (var i = 0; i < 77; i++) {
             if (mdl.get(i).clr === "")
                 continue;
-            var j = i;
+            var k = i;
             var arr = [];
-            if (j%9 < 5) {
-                arr.push(j);
-                while (mdl.get(j+1).clr === mdl.get(j).clr) {
-                    arr.push(++j);
-                    if (j+1 >= 81)
-                        break;
-                }
+            arr.push(k);
+            while (mdl.get(k+1).clr === mdl.get(k).clr && (k+1)%9 > i%9) {
+                arr.push(++k);
+                if (k+1 >= 81)
+                    break;
             }
             if (arr.length >= 5) {
                 score.frameText = parseInt(score.frameText) + arr.length + (arr.length-5)*10;
                 scrChg = true;
-                for (var k = 0; k < arr.length; ++k)
-                    mdl.get(arr[k]).clr = "";
+                for (var s = 0; s < arr.length; ++s)
+                    mdl.get(arr[s]).clr = "";
                 continue;
             }
-            j = i;
+            k = i;
             arr = [];
-            if (j+10 < 81) {
-                arr.push(j);
-                while (mdl.get(j+10).clr === mdl.get(j).clr) {
-                    j+=10;
-                    arr.push(j);
-                    if (j+10 >= 81)
+            if (k+10 < 81) {
+                arr.push(k);
+                while (mdl.get(k+10).clr === mdl.get(k).clr && (k+10)%9 > i%9) {
+                    k+=10;
+                    arr.push(k);
+                    if (k+10 >= 81)
                         break;
                 }
             }
             if (arr.length >= 5) {
                 score.frameText = parseInt(score.frameText) + arr.length + (arr.length-5)*10;
                 scrChg = true;
-                for (k = 0; k < arr.length; ++k)
-                    mdl.get(arr[k]).clr = "";
+                for (s = 0; s < arr.length; ++s)
+                    mdl.get(arr[s]).clr = "";
                 continue;
             }
-            j = i;
+            k = i;
             arr = [];
-            if (j+9 < 81) {
-                arr.push(j);
-                while (mdl.get(j+9).clr === mdl.get(j).clr) {
-                    j+=9;
-                    arr.push(j);
-                    if (j+9 >= 81)
+            if (k+9 < 81) {
+                arr.push(k);
+                while (mdl.get(k+9).clr === mdl.get(k).clr) {
+                    k+=9;
+                    arr.push(k);
+                    if (k+9 >= 81)
                         break;
                 }
             }
             if (arr.length >= 5) {
                 score.frameText = parseInt(score.frameText) + arr.length + (arr.length-5)*10;
                 scrChg = true;
-                for (k = 0; k < arr.length; ++k)
-                    mdl.get(arr[k]).clr = "";
+                for (s = 0; s < arr.length; ++s)
+                    mdl.get(arr[s]).clr = "";
                 continue;
             }
-            j = i;
+            k = i;
             arr = [];
-            if (j+8 < 81) {
-                arr.push(j);
-                while (mdl.get(j+8).clr === mdl.get(j).clr) {
-                    j+=8;
-                    arr.push(j);
-                    if (j+8 >= 81)
+            if (k+8 < 81) {
+                arr.push(k);
+                while (mdl.get(k+8).clr === mdl.get(k).clr && (k+8)%9 < i%9) {
+                    k+=8;
+                    arr.push(k);
+                    if (k+8 >= 81)
                         break;
                 }
             }
             if (arr.length >= 5) {
                 score.frameText = parseInt(score.frameText) + arr.length + (arr.length-5)*10;
                 scrChg = true;
-                for (k = 0; k < arr.length; ++k)
-                    mdl.get(arr[k]).clr = "";
+                for (s = 0; s < arr.length; ++s)
+                    mdl.get(arr[s]).clr = "";
                 continue;
             }
         }
@@ -157,25 +154,25 @@ Page {
             if (parseInt(score.frameText) > parseInt(record.frameText)) { dlg.open(); }
             return;
         }
-        var j = getRandInt(0, arr.length - 1);
-        mdl.get(arr[j]).clr = cell1.cirClr;
-        arr.splice(j, 1);
+        var m = getRandInt(0, arr.length - 1);
+        mdl.get(arr[m]).clr = cell1.cirClr;
+        arr.splice(m, 1);
         if (arr.length == 0) {
             gameOver = true;
             if (parseInt(score.frameText) > parseInt(record.frameText)) { dlg.open(); }
             return;
         }
-        j = getRandInt(0, arr.length - 1);
-        mdl.get(arr[j]).clr = cell2.cirClr;
-        arr.splice(j, 1);
+        m = getRandInt(0, arr.length - 1);
+        mdl.get(arr[m]).clr = cell2.cirClr;
+        arr.splice(m, 1);
         if (arr.length == 0) {
             gameOver = true;
             if (parseInt(score.frameText) > parseInt(record.frameText)) { dlg.open(); }
             return;
         }
-        j = getRandInt(0, arr.length - 1);
-        mdl.get(arr[j]).clr = cell3.cirClr;
-        arr.splice(j, 1);
+        m = getRandInt(0, arr.length - 1);
+        mdl.get(arr[m]).clr = cell3.cirClr;
+        arr.splice(m, 1);
         if (arr.length == 0) {
             gameOver = true;
             if (parseInt(score.frameText) > parseInt(record.frameText)) { dlg.open(); }
